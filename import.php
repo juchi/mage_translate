@@ -154,7 +154,7 @@ class Translation_Import extends Translation_Abstract
             // add possible translations present in destination files but not in source file
             if (!$this->getArg('truncate')) {
                 while (($data = fgetcsv($fileHandles[$lang], 0, ',', '"')) !== false) {
-                    if (!isset($translatedData[$data[0]][$lang])) {
+                    if (!isset($translatedData[$data[0]][$lang]) || $translatedData[$data[0]][$lang] === '') {
                         if (!isset($translatedData[$data[0]])) {
                             $translatedData[$data[0]] = array();
                         }
