@@ -233,7 +233,7 @@ Mandatory arguments:
   --file        The csv file to import
                 ex: ./translate.csv
   --destination The destination folder ("locale") for the translations
-                ex: [magento_base]/app/code/locale
+                ex: [magento_base]/app/locale
 
 Options:
   -h            Short alias for help
